@@ -1,99 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivani Chaudhary | Product Manager Portfolio</title>
-    <meta name="description" content="Portfolio of Shivani Chaudhary – Product Manager transitioning from Engineering. Showcasing projects, skills, and impact.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shivani Chaudhary — Product Manager Portfolio</title>
+  <meta name="description" content="Shivani Chaudhary | Product Manager (ex-engineer). Portfolio showcasing product thinking, case studies and resume." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-left">
-        <img src="images/airfocus-v89zhr0iBFY-unsplash.jpg" alt="Photo of Shivani Chaudhary" class="hero-photo">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="brand-name">Shivani <span class="brand-last">Chaudhary</span></h1>
+        <p class="brand-role">Engineering mind • Product heart</p>
+      </div>
+      <nav class="nav">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a class="btn btn-resume" href="resume.pdf" download>Download Resume</a>
+      </nav>
     </div>
-    <div class="hero-right">
-        <h1>Engineering Mind, Product Heart — Building Products People Love</h1>
-        <p>Hi, I’m Shivani. I started as an engineer building features and solving technical problems. I now focus on <strong>Product Management</strong>, combining technical expertise with product thinking to deliver meaningful user experiences.</p>
-        <a href="#projects" class="btn">View My Work</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left reveal">
+        <img src="images/hero.jpg" alt="Photo of Shivani Chaudhary" class="hero-photo">
+      </div>
+      <div class="hero-right reveal delay-1">
+        <h2 class="hero-title">Building products people remember.</h2>
+        <p class="hero-sub">I’m <strong>Shivani</strong> — ex-engineer turned Product Manager. I blend technical depth with user-first product strategy to ship measurable impact.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="resume.pdf" class="btn btn-outline" download>Download Resume</a>
+        </div>
+
+        <ul class="hero-highlights">
+          <li><strong>Product Strategy</strong> • Roadmaps & prioritization</li>
+          <li><strong>User Research</strong> • Interviews, personas, JTBD</li>
+          <li><strong>Execution</strong> • Prototypes, metrics, A/B plans</li>
+        </ul>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Projects Section -->
-<section id="projects" class="projects">
-    <h2>Projects</h2>
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title reveal">Selected Projects</h2>
 
-    <!-- Project 1 -->
-    <div class="project">
-        <img src="images/airfocus-v89zhr0iBFY-unsplash.jpg" alt="Smart Parcel Delivery App Wireframe" class="project-img">
-        <div class="project-text">
+      <div class="projects-grid">
+        <!-- Card 1 -->
+        <article class="card reveal card-hover">
+          <div class="card-media">
+            <img src="images/project1.jpg" alt="Smart Parcel Delivery app wireframe">
+            <div class="card-overlay">
+              <span class="badge">MVP • Concept</span>
+            </div>
+          </div>
+          <div class="card-body">
             <h3>Smart Parcel Delivery App</h3>
-            <p><strong>Role:</strong> Product Manager / Engineer</p>
-            <p><strong>Problem:</strong> Urban users struggle to send parcels quickly and affordably. Existing courier services are slow and expensive.</p>
-            <p><strong>Solution:</strong> Traveler-based parcel matching, dynamic pricing (intra-city vs inter-city), tracking & in-app chat. Wireframes & user flows in Figma.</p>
-            <p><strong>Execution:</strong> Clickable prototype built; coordinated with developers; MVP prioritized using MoSCoW framework.</p>
-            <p><strong>Impact:</strong> <span class="badge">30% Faster</span> delivery, <span class="badge">25% Lower Cost</span>, scalable to new cities.</p>
+            <p class="muted"><strong>Role:</strong> PM / Engineer</p>
+            <p>Matched travelers with parcels using dynamic pricing and urgency tiers — reduced delivery time and cost for users.</p>
+            <ul class="card-meta">
+              <li>30% faster deliveries</li>
+              <li>25% lower cost (projected)</li>
+            </ul>
+            <a href="#contact" class="card-link">Discuss this project →</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card reveal delay-1 card-hover">
+          <div class="card-media">
+            <img src="images/project2.jpg" alt="Task management dashboard">
+            <div class="card-overlay">
+              <span class="badge">Product Redesign</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Task Management Redesign</h3>
+            <p class="muted"><strong>Role:</strong> Product Strategist / Engineer</p>
+            <p>Streamlined task flows, analytics dashboard and team notifications — improved completion rates and visibility.</p>
+            <ul class="card-meta">
+              <li>25% faster completion</li>
+              <li>Better cross-team visibility</li>
+            </ul>
+            <a href="#contact" class="card-link">Discuss this project →</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card reveal delay-2 card-hover">
+          <div class="card-media">
+            <img src="images/project3.jpg" alt="Onboarding redesign">
+            <div class="card-overlay">
+              <span class="badge">UX / Retention</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Onboarding & Retention</h3>
+            <p class="muted"><strong>Role:</strong> PM / Designer</p>
+            <p>Redesigned onboarding for product clarity and core-feature discovery — tested via phased A/B rollout.</p>
+            <ul class="card-meta">
+              <li>20% lift in 7-day retention (projected)</li>
+            </ul>
+            <a href="#contact" class="card-link">Discuss this project →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container about-grid">
+      <div class="about-left reveal">
+        <h2>About</h2>
+        <p class="lead">I transitioned from engineering to product because I love converting user problems into elegant, usable solutions. I prioritize impact: clear metrics, fast learning loops, and strong team collaboration.</p>
+        <p>I enjoy working with cross-functional teams, running user interviews, and designing experiments that prove product impact. I’m seeking PM roles where I can lead strategy and ship results.</p>
+        <div class="skills-list">
+          <span class="skill-pill">Product Strategy</span>
+          <span class="skill-pill">Roadmaps</span>
+          <span class="skill-pill">User Research</span>
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">A/B Testing</span>
         </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project">
-        <img src="images/airfocus-v89zhr0iBFY-unsplash.jpg" alt="Task Management Tool Redesign" class="project-img">
-        <div class="project-text">
-            <h3>Redesign of Task Management Tool</h3>
-            <p><strong>Role:</strong> Product Strategist / Engineer</p>
-            <p><strong>Problem:</strong> Teams face inefficiencies in task tracking, leading to missed deadlines.</p>
-            <p><strong>Solution:</strong> Simplified task creation & prioritization, analytics dashboard, notifications & collaboration features.</p>
-            <p><strong>Execution:</strong> Coordinated backend implementation; high-fidelity Figma mockups created.</p>
-            <p><strong>Impact:</strong> <span class="badge">25% Improvement</span> in task completion and team collaboration.</p>
+      </div>
+      <div class="about-right reveal delay-1">
+        <div class="card-quote">
+          <blockquote>“I turn complex technical constraints into simple user value.”</blockquote>
+          <p class="muted small">— Shivani Chaudhary</p>
         </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Project 3 -->
-    <div class="project">
-        <img src="images/airfocus-v89zhr0iBFY-unsplash.jpg" alt="App Redesign Case Study" class="project-img">
-        <div class="project-text">
-            <h3>Product Redesign Case Study</h3>
-            <p><strong>Role:</strong> Product Designer / PM</p>
-            <p><strong>Problem:</strong> Low app retention after 3 days; users confused navigating features.</p>
-            <p><strong>Solution:</strong> Redesigned onboarding, improved navigation, prioritized changes using impact-effort matrix.</p>
-            <p><strong>Execution:</strong> Interactive Figma prototypes; phased rollout plan with A/B testing.</p>
-            <p><strong>Impact:</strong> <span class="badge">20% Increase</span> in 7-day retention and engagement.</p>
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container contact-grid reveal">
+      <div>
+        <h2>Let’s talk</h2>
+        <p class="lead">Looking for a product-focused PM who understands engineering and ships with impact. I’m open to product roles and consulting.</p>
+        <p><strong>Email:</strong> <a href="mailto:shivani@email.com">shivani@email.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/shivani" target="_blank" rel="noreferrer">linkedin.com/in/shivani</a></p>
+        <div style="margin-top:18px;">
+          <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
+          <a class="btn btn-outline" href="#projects">View Projects</a>
         </div>
+      </div>
+      <div class="contact-card">
+        <h3>Quick info</h3>
+        <p class="muted">Based in India • Open to hybrid/remote roles • Interested in AI, logistics & consumer products</p>
+        <div class="footer-note">Made with ♥ by Shivani • © <span id="year"></span></div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Skills Section -->
-<section class="skills">
-    <h2>Skills & Tools</h2>
-    <div class="skills-grid">
-        <div class="skill">Roadmapping</div>
-        <div class="skill">Prioritization</div>
-        <div class="skill">MVP Planning</div>
-        <div class="skill">User Research</div>
-        <div class="skill">UX/UI</div>
-        <div class="skill">Analytics</div>
-        <div class="skill">A/B Testing</div>
-        <div class="skill">Figma</div>
-        <div class="skill">Miro</div>
-        <div class="skill">Notion</div>
-        <div class="skill">Trello</div>
-        <div class="skill">Jira</div>
-        <div class="skill">Google Analytics</div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>Shivani Chaudhary — Product Manager</small>
+      <small>•</small>
+      <small><a href="mailto:shivani@email.com">shivani@email.com</a></small>
     </div>
-</section>
+  </footer>
 
-<!-- Contact Section -->
-<section class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:shivani@email.com">shivani@email.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/shivani" target="_blank">linkedin.com/in/shivani</a></p>
-    <p>GitHub: <a href="https://github.com/shivani" target="_blank">github.com/shivani</a></p>
-    <a href="#" class="btn">Download Resume</a>
-</section>
-
+  <script>
+    // small reveal animation using IntersectionObserver
+    document.getElementById('year').innerText = new Date().getFullYear();
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, {threshold: 0.12});
+    reveals.forEach(r => io.observe(r));
+  </script>
 </body>
 </html>
